@@ -1,0 +1,38 @@
+<!-- <div appDropdown class="dropdown" >
+  <button class="btn btn-primary dropdown-toggle" id="about-us" type="button">
+    Select City <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li  *ngFor="let city of cities">
+      <a (click)="onClick(city)" href="#">{{city.name}}</a>
+    </li>
+    
+  </ul>
+ </div> -->
+
+ <!-- //right -->
+ <!-- <div appDropdown class="dropdown" class="col-sm-12">
+  <button class="btn btn-primary dropdown-toggle" id="about-us" type="button">
+    Select City <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li *ngFor="let city of cities">
+      <a (click)="onClick(city)" href="#"><img src="{{city.icon}}" alt="" class="weather-img"> {{city.name}}</a>
+    </li>
+  </ul>
+</div> --> 
+
+
+<div appDropdown class="dropdown" class="col-sm-12">
+  <button class="btn btn-primary dropdown-toggle" id="about-us" type="button" (click)="toggleSearchInput()">
+    Select City <span class="caret"></span>
+  </button>
+  <div class="input-group mb-3 dropdown-toggle" *ngIf="showSearch">
+    <input type="text" class="form-control" placeholder="Search for a city" [(ngModel)]="searchQuery" (input)="filterCities()">
+  </div>
+  <ul class="dropdown-menu">
+    <li *ngFor="let city of filteredCities">
+      <a (click)="onClick(city)" href="#"><img src="{{city.icon}}" alt="" class="weather-img"> {{city.name}}</a>
+    </li>
+  </ul>
+</div>

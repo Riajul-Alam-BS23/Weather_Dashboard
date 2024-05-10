@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  .weather-container {
+    /* position: absolute; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(128, 76, 9, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }

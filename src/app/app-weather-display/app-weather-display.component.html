@@ -1,0 +1,18 @@
+<!-- <div>
+    <h3>City : {{city.name}}</h3>
+    <p>Condition : {{city.conditions}}</p>
+    <p>Temperature : {{city.temperature}}</p>
+    <app-weather-icon></app-weather-icon>
+</div> -->
+
+<div class="" *ngIf="isTrue">
+    <div class="weather-container">
+      <h3>City : <span id="city-name">{{city.name}}</span></h3>
+      <p>Condition : <span id="weather-condition">{{city.conditions}}</span></p>
+      <p>Temperature : <span id="temperature">{{city.temperature}}</span></p>
+
+      <div id="weather-icon">
+        <app-weather-icon></app-weather-icon>
+      </div>
+    </div>
+</div>

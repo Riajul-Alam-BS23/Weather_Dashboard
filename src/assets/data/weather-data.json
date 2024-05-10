@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Dhaka",
+        "temperature": 37,
+        "conditions": "Sunny",
+        "icon": "assets/icons/sunny.png"
+    },
+    {
+      "name": "London",
+      "temperature": 18,
+      "conditions": "Cloudy",
+      "icon": "assets/icons/cloudy.png"
+    },
+    {
+      "name": "New York",
+      "temperature": 22,
+      "conditions": "Sunny",
+      "icon": "assets/icons/sunny.png"
+    },
+    {
+      "name": "Tokyo",
+      "temperature": 25,
+      "conditions": "Rainy",
+      "icon": "assets/icons/rainy.png"
+    }
+  ]
+  
