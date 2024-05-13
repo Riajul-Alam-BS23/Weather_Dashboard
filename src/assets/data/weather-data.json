@@ -1,27 +1,128 @@
 [
-    {
-        "name": "Dhaka",
-        "temperature": 37,
-        "conditions": "Sunny",
-        "icon": "assets/icons/sunny.png"
-    },
-    {
-      "name": "London",
-      "temperature": 18,
-      "conditions": "Cloudy",
-      "icon": "assets/icons/cloudy.png"
-    },
-    {
-      "name": "New York",
-      "temperature": 22,
-      "conditions": "Sunny",
-      "icon": "assets/icons/sunny.png"
-    },
-    {
-      "name": "Tokyo",
-      "temperature": 25,
-      "conditions": "Rainy",
-      "icon": "assets/icons/rainy.png"
-    }
-  ]
-  
+  {
+    "name": "Dhaka",
+    "temperature": 25,
+    "conditions": "Cloudy",
+    "icon": "assets/icons/cloudy.png"
+  },
+  {
+    "name": "London",
+    "temperature": 18,
+    "conditions": "Cloudy",
+    "icon": "assets/icons/cloudy.png"
+  },
+  {
+    "name": "New York",
+    "temperature": 22,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Tokyo",
+    "temperature": 25,
+    "conditions": "Rainy",
+    "icon": "assets/icons/rainy.png"
+  },
+  {
+    "name": "Paris",
+    "temperature": 20,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Sydney",
+    "temperature": 27,
+    "conditions": "Cloudy",
+    "icon": "assets/icons/cloudy.png"
+  },
+  {
+    "name": "Moscow",
+    "temperature": 15,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Dubai",
+    "temperature": 32,
+    "conditions": "Cloudy",
+    "icon": "assets/icons/cloudy.png"
+  },
+  {
+    "name": "Singapore",
+    "temperature": 29,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Los Angeles",
+    "temperature": 28,
+    "conditions": "Rainy",
+    "icon": "assets/icons/rainy.png"
+  },
+  {
+    "name": "Mumbai",
+    "temperature": 30,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Beijing",
+    "temperature": 23,
+    "conditions": "Rainy",
+    "icon": "assets/icons/rainy.png"
+  },
+  {
+    "name": "Berlin",
+    "temperature": 16,
+    "conditions": "Cloudy",
+    "icon": "assets/icons/cloudy.png"
+  },
+  {
+    "name": "Rome",
+    "temperature": 24,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Toronto",
+    "temperature": 20,
+    "conditions": "Rainy",
+    "icon": "assets/icons/rainy.png"
+  },
+  {
+    "name": "Seoul",
+    "temperature": 21,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Madrid",
+    "temperature": 22,
+    "conditions": "Cloudy",
+    "icon": "assets/icons/cloudy.png"
+  },
+  {
+    "name": "Cairo",
+    "temperature": 29,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  },
+  {
+    "name": "Bangkok",
+    "temperature": 31,
+    "conditions": "Rainy",
+    "icon": "assets/icons/rainy.png"
+  },
+  {
+    "name": "Vienna",
+    "temperature": 19,
+    "conditions": "Cloudy",
+    "icon": "assets/icons/cloudy.png"
+  },
+  {
+    "name": "Lisbon",
+    "temperature": 21,
+    "conditions": "Sunny",
+    "icon": "assets/icons/sunny.png"
+  }
+]

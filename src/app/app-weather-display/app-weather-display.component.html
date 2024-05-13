@@ -5,14 +5,17 @@
     <app-weather-icon></app-weather-icon>
 </div> -->
 
-<div class="" *ngIf="isTrue">
+<div class="Main" *ngIf="isTrue">
     <div class="weather-container">
       <h3>City : <span id="city-name">{{city.name}}</span></h3>
       <p>Condition : <span id="weather-condition">{{city.conditions}}</span></p>
-      <p>Temperature : <span id="temperature">{{city.temperature}}</span></p>
+      <p>Temperature : <span id="temperature">{{city.temperature}}&deg;C</span></p>
 
       <div id="weather-icon">
         <app-weather-icon></app-weather-icon>
       </div>
     </div>
+</div>
+<div class="" *ngIf="!isTrue">
+  <h2 style="color: red;">Please Select a city from dropdown icon.</h2>
 </div>

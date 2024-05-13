@@ -116,8 +116,11 @@ export class AppCitySelectorComponent implements OnInit {
   }
 
   filterCities() {
-    this.filteredCities = this.cities.filter(city =>
-      city.name.toLowerCase().includes(this.searchQuery.toLowerCase())
-    );
+    this.filteredCities = this.cities
+      .filter(city =>
+        city.name.toLowerCase().startsWith(this.searchQuery.toLowerCase())
+      )
+      .sort((a, b) => a.name.localeCompare(b.name));
   }
+  
 }

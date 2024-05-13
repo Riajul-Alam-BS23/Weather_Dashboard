@@ -23,3 +23,7 @@ body {
     margin: 20px 0;
     border-top: 1px solid #ccc;
   }
+
+  .Main{
+    background-color: rgb(221, 172, 108);
+  }
