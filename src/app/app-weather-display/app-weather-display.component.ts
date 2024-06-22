@@ -1,6 +1,7 @@
 // weather-display.component.ts
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { City } from '../shared/City.model';
 
 @Component({
   selector: 'app-weather-display',
@@ -9,17 +10,16 @@ import { DataService } from '../data.service';
 })
 export class AppWeatherDisplayComponent implements OnInit {
   constructor(private data: DataService) { }
+  @Input() currentCity:City;
   isTrue: boolean=false;
-  city: { name: string, temperature: number, conditions: string, icon: string };
+  city: City;
   ngOnInit(): void {
-    this.data.selectedCity.subscribe((city: { name: string, temperature: number, conditions: string, icon: string }) => {
+    this.data.selectedCity.subscribe((city:City) => {
       this.city = city;
     });
-    // this.data.citySelected.subscribe((res: boolean) => {
-    //   this.isTrue = res;
-    // })
     this.data.citySelected.subscribe((response: boolean) => {
       this.isTrue = response;
     })
   }
+  
 }

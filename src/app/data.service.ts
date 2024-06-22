@@ -1,18 +1,12 @@
 import { HttpClient } from "@angular/common/http";
 import { EventEmitter, Injectable, OnInit } from "@angular/core";
+import { City } from "./shared/City.model";
 @Injectable()
-export class DataService implements OnInit{
-    selectedCity = new EventEmitter<{ name: string, temperature: number, condition: string, icon: string }>();
+export class DataService{
+    selectedCity = new EventEmitter<City>();
     citySelected = new EventEmitter <boolean>();
-    ngOnInit(): void {
-        
-    }
     constructor(private http: HttpClient) { }
     getWeatherData() {
-       return this.http.get<{name:string,temperature:number,condition:string,icon:string}[]>("../assets/data/weather-data.json");
-    }
-    // triggerCitySelectedEvent(value: boolean) {
-    //     this.citySelected.emit(value);
-    // }
-    
+       return this.http.get<City[]>("../assets/data/weather-data.json");
+    } 
 }
