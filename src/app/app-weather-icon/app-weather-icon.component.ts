@@ -9,7 +9,7 @@ import { City } from '../shared/City.model';
 })
 export class AppWeatherIconComponent implements OnInit {
   constructor(private data: DataService) { }
-  @Input() cityIcon:string;
+  // @Input() cityIcon:string;
   icon: string;
   ngOnInit(): void {
     this.data.selectedCity.subscribe((city: { name: string, temperature: number, condition: string, icon: string }) => {

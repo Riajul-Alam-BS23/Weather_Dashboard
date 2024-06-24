@@ -10,7 +10,6 @@ import { City } from '../shared/City.model';
 })
 export class AppWeatherDisplayComponent implements OnInit {
   constructor(private data: DataService) { }
-  @Input() currentCity:City;
   isTrue: boolean=false;
   city: City;
   ngOnInit(): void {

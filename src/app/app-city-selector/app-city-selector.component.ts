@@ -25,8 +25,8 @@ export class AppCitySelectorComponent implements OnInit {
   }
 
   onClick(city:City) {
-    this.data.selectedCity.emit(city);
-    this.data.citySelected.emit(true);
+    this.data.selectedCity.next(city);
+    this.data.citySelected.next(true);
   }
 
 

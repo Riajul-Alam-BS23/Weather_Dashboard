@@ -29,3 +29,6 @@ body {
   justify-content: center;
   align-items: center;
 }
+.weather-details{
+  margin-top: 15%;
+}

@@ -1,19 +1,19 @@
-<div class="Main" *ngIf="isTrue" 
-
->
-  <div class="weather-container"
-  [ngStyle]="{'background-image': 'url(' + city.backgroundImage + ')', 
+<div class="Main" *ngIf="isTrue">
+  <div class="weather-container" [ngStyle]="{'background-image': 'url(' + city.backgroundImage + ')', 
               'background-size': 'cover', 
               'background-position': 'center', 
               'background-repeat': 'no-repeat',
-              'color':'#0ab8c6'}"
-  >
-    <h3><span id="weather-condition">{{ city.condition }}</span></h3>
-    <p><span id="city-name">{{ city.name }}</span></p>
-    <h3><span id="temperature">{{ city.temperature }}&deg;C</span></h3>
-    <div id="weather-icon">
-      <app-weather-icon [cityIcon]="city.icon"></app-weather-icon>
+              'color':'#0ab8c6'}">
+    <div class="weather-details">
+      <h3><span id="weather-condition">{{ city.condition }}</span></h3>
+      <p><span id="city-name">{{ city.name }}</span></p>
+      <h3><span id="temperature">{{ city.temperature }}&deg;C</span></h3>
+      <div id="weather-icon">
+        <!-- <app-weather-icon [cityIcon]="city.icon"></app-weather-icon> -->
+        <app-weather-icon></app-weather-icon>
+      </div>
     </div>
+
   </div>
 </div>
 
