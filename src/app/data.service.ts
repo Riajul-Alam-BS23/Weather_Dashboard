@@ -8,6 +8,6 @@ export class DataService{
     citySelected = new BehaviorSubject <boolean>(false);
     constructor(private http: HttpClient) { }
     getWeatherData() {
-       return this.http.get<City[]>("../assets/data/weather-data.json");
+       return this.http.get<City[]>("./assets/data/weather-data.json");
     } 
 }
